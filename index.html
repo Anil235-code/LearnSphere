@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Vault | Notes • Lessons • Resources</title>
+  <meta name="description" content="A free study resource hub for notes, lessons, PPTs and exam preparation.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #172033;
+    }
+    header {
+      background: #172033;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 1.35rem; font-weight: 800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: .95rem;
+    }
+    .hero {
+      padding: 80px 7%;
+      background: linear-gradient(135deg, #e8eefc, #ffffff);
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); margin-bottom: 15px; }
+    .hero p { max-width: 650px; margin: auto; color: #526078; font-size: 1.1rem; }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #172033;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    section { padding: 55px 7%; max-width: 1200px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(23,32,51,.08);
+    }
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #627089; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #edf1f8;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+    .about {
+      background: #172033;
+      color: white;
+      max-width: none;
+      text-align: center;
+    }
+    .about p { max-width: 700px; margin: auto; color: #d6dceb; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #6b7486;
+      background: white;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 60px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📚 Study Vault</div>
+  <nav>
+    <a href="#lessons">Lessons</a>
+    <a href="#resources">Resources</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Learn Something Every Day.</h1>
+  <p>Simple, useful study content, notes, PPTs and exam-preparation resources — all in one place.</p>
+  <a class="btn" href="#lessons">Explore Lessons ↓</a>
+</section>
+
+<section id="lessons">
+  <h2 class="section-title">Latest Lessons</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">DAY 1</span>
+      <h3>Data Structures Basics</h3>
+      <p>Understand stacks, queues, linked lists and the fundamentals you need to build a strong foundation.</p>
+    </article>
+    <article class="card">
+      <span class="tag">DAY 2</span>
+      <h3>Infix to Postfix</h3>
+      <p>Learn how stack-based expression conversion works with clear examples and step-by-step logic.</p>
+    </article>
+    <article class="card">
+      <span class="tag">COMING SOON</span>
+      <h3>Daily Exam Lessons</h3>
+      <p>New concepts, useful vocabulary, practice questions and revision material will be added regularly.</p>
+    </article>
+  </div>
+</section>
+
+<section id="resources">
+  <h2 class="section-title">Free Resources</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>📄 Notes</h3>
+      <p>Upload your PDF notes here and replace this card with a download link.</p>
+    </article>
+    <article class="card">
+      <h3>📊 PPTs</h3>
+      <p>Share presentation files for your followers to study and revise from.</p>
+    </article>
+    <article class="card">
+      <h3>🧠 Practice</h3>
+      <p>Add quizzes, questions and mini challenges as your page grows.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">About This Page</h2>
+  <p>
+    Study Vault is a student-focused resource page built around one idea:
+    make useful learning material easy to find, understand and revise.
+  </p>
+  <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Follow on Instagram</a>
+</section>
+
+<footer>
+  © 2026 Study Vault • Free learning resources
+</footer>
+
+</body>
+</html>
